@@ -7,11 +7,18 @@ usage = '''usage:
 forums <-> topics <-> posts
 press the # of the forum/topic to browse to it
 press b to back out to the previous level
-press q to quit'''
+press q to quit
+modify forums.py to add keys'''
+
+index_dict = {'cabrillo': 'http://oslab.cishawks.net/forum/index.php',
+			  'adblock': 'https://adblockplus.org/forum/',
+			  'asterisk': 'http://forums.asterisk.org/'}
 
 
-index = 'http://opus.cis.cabrillo.edu/forum/'
-
+if sys.argv[1] in index_dict.keys():
+	index = index_dict[sys.argv[1]]
+else:
+	index = sys.argv[1]
 
 # {forum name: link}
 # {forum name: [(topictitle, link), ...]}
