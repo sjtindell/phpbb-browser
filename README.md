@@ -1,7 +1,7 @@
 # pyPHPBB
 A CLI forum browser for PHPBB based forums.
 
-1. Edit forums.py and insert URL.
+1. Edit forums.py and to add keys to URL dict for faster browsing..
 2. Run script
 
 How To:
@@ -12,3 +12,4 @@ How To:
 To Do:
 - CLI args
 - project structure + setup.py
+- account login/posting
